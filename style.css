@@ -79,7 +79,7 @@ button{
     bottom: 0;
     border: solid 3px;
     border-radius: 10px;
-    
+    display: none;
 }
 .titleMsgbox{font-family: 'Inter', sans-serif}
 #msgBox{font-family: 'Poppins', sans-serif}
