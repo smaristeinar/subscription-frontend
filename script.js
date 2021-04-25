@@ -47,7 +47,7 @@ function makeMsg(color, message){
 function login(){
     let user = document.getElementById("usename").value;
     let pass = document.getElementById("pass").value;
-    fetch('http://localhost:3000/users')
+    fetch('https://smari-subscriptions.herokuapp.com/users')
     .then(response => response.json())
     .then(function(data){
       for (let index = 0; index < data.length; index++) {
@@ -79,7 +79,7 @@ function newUser(){
         subscribed:subSwitch(document.getElementById("subscribed").checked),
         randomKey:null
     }
-    fetch("http://localhost:3000/newuser", {
+    fetch("https://smari-subscriptions.herokuapp.com/newuser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -93,7 +93,7 @@ function updatesub(){
     console.log(myStorage.getItem("userName"));
     username = {name:myStorage.getItem("userName"),
                 status:myStorage.getItem("subStatus")};
-    fetch("http://localhost:3000/updatesub", {
+    fetch("https://smari-subscriptions.herokuapp.com/updatesub", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Poppins:wght@300&display=swap');
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+body{
+    background-color: lightblue;
+}
+
+input{
+    border-radius:4px;
+    background:#ecf0f1;
+    border: #ccc 1px solid;
+    padding: 8px;
+    
+    font-size:1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    text-align:center
+
+}
+#profileName{
+    font-family: 'Poppins', sans-serif;
+}
+
+.title{
+    font-family: 'Inter', sans-serif
+}
+
+button{
+    background:#2ecc71;
+    width:125px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color:white;
+    border-radius:4px;
+    border: #27ae60 1px solid;
+    
+    margin-top:20px;
+    margin-bottom:20px;
+    
+   
+    font-weight:800;
+    font-size:0.8em;    
+}
+
+.checkbox{
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Poppins', sans-serif
+}
+
+
+#msgBoxContainer{
+    text-align: center;
+    background-color: rgb(78, 183, 248);
+    width: 250px;
+    height: 100px;
+    margin: 20px;
+    padding:10px;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    border: solid 3px;
+    border-radius: 10px;
+    
+}
+.titleMsgbox{font-family: 'Inter', sans-serif}
+#msgBox{font-family: 'Poppins', sans-serif}
