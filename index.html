@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="msgBoxContainer" >
+    <h6 class="titleMsgbox">Message</h6>
+    <p id="msgBox"> working with my box right now hello</p>
+    </div>
+    <div id="container">
+        
+    </div>
+    
+    <template id="login">
+        <div>
+            <h1 class="title">Welcome!</h1>
+            <input type="text" name="name" id="usename" placeholder="Username">
+            <input type="password" name="password" id="pass" placeholder="Password">
+            <button id="loginBtn" onclick="login()">Login!</button>
+            <button id=regButtona" onclick="register()">register</button>
+        </div>
+    </template>
+    <template id="userProfile">
+        <div class="splitter">
+        <h1 class="title">Hi there!</h1>
+        <h1 id=profileName></h1>
+        </div>
+        <div class="splitter">
+        <button id="subBtn"onclick="updatesub()"></button>
+        <button id="logoutBtn" onclick="logOut()">Logout</button>
+        </div>
+    </template>
+    <template id="register">  
+        <h1 class="title">Sign up!</h1>
+        <input type="text" id="userNsignup" placeholder="username">
+        <input type="password" name="pass" id="userPsingup" placeholder="password">
+
+        <label class="checkbox">Subscribe
+            <input type="checkbox" checked="checked" id="subscribed">
+            <span class="checkmark"></span>
+        </label>
+        <button onclick="newUser()">Continue</button>
+        <button onclick="startpage()">Back</button>
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>
